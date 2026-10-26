@@ -1,0 +1,2 @@
+# Deploy with the exact environment that produced the saved sklearn artifact.
+-r requirements.lock.txt

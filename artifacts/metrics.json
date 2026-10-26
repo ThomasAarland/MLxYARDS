@@ -1,0 +1,154 @@
+{
+  "created_utc": "2026-10-26T22:06:04.363853+00:00",
+  "random_seed": 42,
+  "selection_metric": "validation RMSE",
+  "selected_model": "Gradient boosting (15 leaves)",
+  "fit_seasons": [
+    2021,
+    2022,
+    2023
+  ],
+  "validation_season": 2024,
+  "test_season": 2025,
+  "refit_on_validation": false,
+  "train": {
+    "Mean baseline": {
+      "MAE": 5.756763178747862,
+      "RMSE": 8.535764631538626,
+      "R2": 0.0
+    },
+    "Ridge": {
+      "MAE": 5.61914456146255,
+      "RMSE": 8.434663875620382,
+      "R2": 0.02354845122099214
+    },
+    "Gradient boosting (15 leaves)": {
+      "MAE": 5.547176445278339,
+      "RMSE": 8.34752574704517,
+      "R2": 0.04361958890401907
+    },
+    "Gradient boosting (31 leaves)": {
+      "MAE": 5.516209774806666,
+      "RMSE": 8.298933786596526,
+      "R2": 0.05472159440274482
+    }
+  },
+  "validation": {
+    "Mean baseline": {
+      "MAE": 5.768462537471953,
+      "RMSE": 8.593723674038882,
+      "R2": -6.302383022860347e-05
+    },
+    "Ridge": {
+      "MAE": 5.612810207373313,
+      "RMSE": 8.481180017863327,
+      "R2": 0.025959168504671393
+    },
+    "Gradient boosting (15 leaves)": {
+      "MAE": 5.578482749513953,
+      "RMSE": 8.441106451606824,
+      "R2": 0.03514210615951818
+    },
+    "Gradient boosting (31 leaves)": {
+      "MAE": 5.586218340062494,
+      "RMSE": 8.45160155785739,
+      "R2": 0.032741335278706485
+    }
+  },
+  "test": {
+    "Gradient boosting (15 leaves)": {
+      "MAE": 5.517753210859515,
+      "RMSE": 8.279030755285158,
+      "R2": 0.03293821641176531
+    }
+  },
+  "test_by_play_type": {
+    "pass": {
+      "MAE": 6.789660949392351,
+      "RMSE": 9.444593407729727,
+      "R2": 0.01981599320073779
+    },
+    "run": {
+      "MAE": 3.5904760145078747,
+      "RMSE": 6.1024598094810045,
+      "R2": 0.024006196754603693
+    }
+  },
+  "split_counts": {
+    "train": 105580,
+    "validation": 34728,
+    "test": 34273
+  },
+  "cleaning": {
+    "raw_rows": 247284,
+    "duplicates_removed": 0,
+    "relevant_play_rows": 175790,
+    "clean_rows": 174581,
+    "missing_invalid_or_overtime_removed": 1209,
+    "rows_by_season": {
+      "2021": 35278,
+      "2022": 35011,
+      "2023": 35291,
+      "2024": 34728,
+      "2025": 34273
+    },
+    "rows_by_play_type": {
+      "pass": 105928,
+      "run": 68653
+    }
+  },
+  "data_provenance": [
+    {
+      "season": 2021,
+      "rows": 49922,
+      "cache_file": "pbp_2021.parquet",
+      "sha256": "d155f98b952fa2a645b1977e899cc8ae2ea324eea898ed0cb60a701edbbb6b11",
+      "source": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2021.parquet"
+    },
+    {
+      "season": 2022,
+      "rows": 49434,
+      "cache_file": "pbp_2022.parquet",
+      "sha256": "a98dc04240a6d19da453d8c05e3c9eb736a42568c83024880f75704e861aa0ea",
+      "source": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2022.parquet"
+    },
+    {
+      "season": 2023,
+      "rows": 49665,
+      "cache_file": "pbp_2023.parquet",
+      "sha256": "10057e181cb633175c6467037e3da097c953847a9cc222e1bc3e40834d68dcc6",
+      "source": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2023.parquet"
+    },
+    {
+      "season": 2024,
+      "rows": 49492,
+      "cache_file": "pbp_2024.parquet",
+      "sha256": "145bb4529bf7bf342a06415e347f6fb45446b141d54301821ac11f05198fb773",
+      "source": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2024.parquet"
+    },
+    {
+      "season": 2025,
+      "rows": 48771,
+      "cache_file": "pbp_2025.parquet",
+      "sha256": "ce388b5a1f240d417748a99d00178d8ef8076592385133deeaa76ca3e6c74e36",
+      "source": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2025.parquet"
+    }
+  ],
+  "environment": {
+    "python": "3.12.10",
+    "nflreadpy": "0.1.5",
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "streamlit": "1.66.1",
+    "plotly": "6.9.0",
+    "joblib": "1.6.0",
+    "pyarrow": "23.0.1"
+  },
+  "feature_importance": {
+    "split": "validation",
+    "sample_size": 6000,
+    "repeats": 5,
+    "method": "Permutation increase in RMSE; not causal or local attribution."
+  }
+}
