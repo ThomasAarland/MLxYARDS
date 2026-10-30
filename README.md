@@ -4,6 +4,8 @@ An interactive NFL expected-yards explorer for DAT158 assignment 2, by **Thomas 
 Choose a pre-snap game situation, compare runs with pass/dropback plays, and inspect the
 real model evaluation. Python, nflreadpy, scikit-learn, Streamlit and Plotly.
 
+**[Open the live application](https://mlxyards.streamlit.app)**
+
 ![Working play explorer](docs/preview.png)
 
 ## Run the website
@@ -92,28 +94,18 @@ The low R² indicates that these inputs explain only a small part of individual-
 ## Deployment
 
 The repository is public at [ThomasAarland/MLxYARDS](https://github.com/ThomasAarland/MLxYARDS).
-The website has been published. Add its public URL here for visitors and assessment.
+The website is deployed on Streamlit Community Cloud: [ML × YARDS](https://mlxyards.streamlit.app).
 
 To reproduce the deployment on [Streamlit Community Cloud](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app):
 
 1. Sign in with your GitHub account and create an app from this repository.
 2. Select the branch containing this project and entry point `app.py`.
 3. Choose Python 3.12 in advanced settings and deploy.
-4. Verify predictions and the analysis tab, then add the public app URL here.
+4. Verify predictions and the analysis tab after deployment.
 
 The app reads the committed artifacts; the cloud host does not need to train or download
 the full dataset.
 
-## Submission checklist
-
-- [x] Publicly readable GitHub repository exists.
-- [x] Code, trained model, evaluation outputs, dependencies and reproduction instructions.
-- [ ] Ensure the final report is included with data sources and AI-use disclosure.
-- [ ] Review the report and add your own reflections and actual time spent.
-- [ ] Confirm permission to submit individually: the assignment normally requires 2–3 students.
-- [x] Publish the website.
-- [ ] Add the public website URL to this README.
-- [ ] Submit the repository link on Canvas yourself.
 
 ## Attribution
 
