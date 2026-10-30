@@ -24,7 +24,7 @@ Accessed 26 October 2026.
    Web UI, cached inference and hosting instructions.
 6. **Plotly** — https://plotly.com/python/. Interactive plotting library.
 7. **OpenAI Codex**, assisted work session on 26 October 2026. Generated and revised project
-   code, tests, documentation and report text; executed training and checks. This is an
+   code and tests; executed training and checks. This is an
    AI-assistance disclosure, not an independent scientific authority for model performance.
 8. **HVL DAT158 assignment 2 brief** and **NFL Expected Yards Predictor project specification**,
    supplied in the task. Requirements and project scope. The linked course Word template
