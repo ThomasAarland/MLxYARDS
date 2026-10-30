@@ -28,7 +28,7 @@ Accessed 26 October 2026.
    AI-assistance disclosure, not an independent scientific authority for model performance.
 8. **HVL DAT158 assignment 2 brief** and **NFL Expected Yards Predictor project specification**,
    supplied in the task. Requirements and project scope. The linked course Word template
-   was not incorporated; the report is provided as repository-readable Markdown.
+   was not incorporated into the generated documentation.
 
 No pretrained yardage model or external solution's implementation is copied into this
 repository. Estimator implementations come from scikit-learn; their parameters are

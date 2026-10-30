@@ -199,7 +199,7 @@ The UI restricts score margins to ±28; training retains other valid margins.
 - [nflverse data dictionary](https://nflreadr.nflverse.com/articles/dictionary_pbp.html)
 - [scikit-learn](https://scikit-learn.org/stable/) · [Streamlit](https://docs.streamlit.io/) · [Plotly](https://plotly.com/python/)
 
-Created for DAT158 by **Thomas Årland**. AI assistance is disclosed in the project report.
+Created for DAT158 by **Thomas Årland**. AI assistance is disclosed in the repository README and source acknowledgments.
     """)
     with st.expander("Data cleaning audit and reproducibility"):
         st.json(results["cleaning"])

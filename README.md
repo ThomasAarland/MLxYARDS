@@ -6,8 +6,6 @@ real model evaluation. Python, nflreadpy, scikit-learn, Streamlit and Plotly.
 
 ![Working play explorer](docs/preview.png)
 
-**[Watch the 60-second website walkthrough](docs/demo.mp4)** · [Read the report](docs/report.md)
-
 ## Run the website
 
 Use **Python 3.12**. From the repository root:
@@ -75,7 +73,7 @@ No test results were used to tune these candidate models.
 Selected model, **2025 final test**: MAE **5.518 yd**, RMSE **8.279 yd**, R² **0.0329**.
 Splits: 105,580 training plays; 34,728 validation plays; 34,273 test plays.
 These are measured results from the included artifacts, not illustrative numbers.
-The weak explanatory power is discussed openly in the [report](docs/report.md).
+The low R² indicates that these inputs explain only a small part of individual-play variation.
 
 ## Repository guide
 
@@ -89,14 +87,14 @@ The weak explanatory power is discussed openly in the [report](docs/report.md).
 | `artifacts/` | Trained model and actual evaluation outputs |
 | `tests/` | Data, inference and Streamlit interaction tests |
 | `data/snapshot/` | Exact source-column snapshots used for reproducibility |
-| `docs/report.md` | Short academic report and AI-use disclosure |
-| `docs/demo.md` | Website demonstration and recording guide |
 | `docs/sources.md` | References and attribution |
 
 ## Deployment
 
 The repository is public at [ThomasAarland/MLxYARDS](https://github.com/ThomasAarland/MLxYARDS).
-To deploy on [Streamlit Community Cloud](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app):
+The website has been published. Add its public URL here for visitors and assessment.
+
+To reproduce the deployment on [Streamlit Community Cloud](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app):
 
 1. Sign in with your GitHub account and create an app from this repository.
 2. Select the branch containing this project and entry point `app.py`.
@@ -104,17 +102,17 @@ To deploy on [Streamlit Community Cloud](https://docs.streamlit.io/deploy/stream
 4. Verify predictions and the analysis tab, then add the public app URL here.
 
 The app reads the committed artifacts; the cloud host does not need to train or download
-the full dataset. A live deployment has not yet been configured. A demonstration video
-is the alternative allowed by the assignment; see [demo documentation](docs/demo.md).
+the full dataset.
 
 ## Submission checklist
 
 - [x] Publicly readable GitHub repository exists.
 - [x] Code, trained model, evaluation outputs, dependencies and reproduction instructions.
-- [x] Short report with data sources and AI-use disclosure.
+- [ ] Ensure the final report is included with data sources and AI-use disclosure.
 - [ ] Review the report and add your own reflections and actual time spent.
 - [ ] Confirm permission to submit individually: the assignment normally requires 2–3 students.
-- [x] Captioned demonstration video included at `docs/demo.mp4`.
+- [x] Publish the website.
+- [ ] Add the public website URL to this README.
 - [ ] Submit the repository link on Canvas yourself.
 
 ## Attribution

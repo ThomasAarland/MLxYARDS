@@ -17,4 +17,4 @@ Source license: https://github.com/nflverse/nflverse-data/blob/main/LICENSE.md
 
 Changes: column selection and Parquet re-encoding. No filtering or target modification
 has yet been applied to these snapshots. Training subsequently filters invalid/irrelevant
-plays and groups scrambles with dropbacks as documented in the report.
+plays and groups scrambles with dropbacks as implemented in `nfl_yards/data.py`.
